@@ -27,10 +27,11 @@ import SwiftIO
 
 while true {
     // blink durations from 0 ms to 250 ms
-    Int(AnalogInput.a0.value * 250).do {
-        OnboardLED.red.blink(duration: $0)
-        sleep(ms: $0)
-        OnboardLED.blue.blink(duration: $0)
-        sleep(ms: $0)
+    Int(AnalogInput.a0.value * 250).do { duration in
+        func blink(led: OnboardLED) {
+            sleep(ms: duration)
+            led.blink(duration: duration)
+        }
+        [OnboardLED.red, .blue].forEach(blink(led:))
     }
 }
