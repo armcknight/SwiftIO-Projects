@@ -22,25 +22,15 @@
   Visit madmachine.io for more info.
 */
 
+import Shared
 import SwiftIO
 
-let a0 = AnalogIn(Id.A0) // Initialize an AnalogIn pin A0.
-let red = DigitalOut(Id.RED) // Initialize the red onboard led.
-let blue = DigitalOut(Id.BLUE) // Initialize the red onboard led.
-
-red.write(true)
-blue.write(true)
-
 while true {
-    // Return the percentage of the voltage in the range of 0.0 to 1.0.
-    let value = a0.readPercent()
-    red.toggle()
-    sleep(ms: Int(value*250))
-    red.toggle()
-    sleep(ms: Int(value*250))
-    blue.toggle()
-    sleep(ms: Int(value*250))
-    blue.toggle()
-    sleep(ms: Int(value*250))
-
+    // blink durations from 0 ms to 250 ms
+    Int(AnalogInput.a0.value * 250).do {
+        OnboardLED.red.blink(duration: $0)
+        sleep(ms: $0)
+        OnboardLED.blue.blink(duration: $0)
+        sleep(ms: $0)
+    }
 }
