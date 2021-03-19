@@ -20,6 +20,8 @@
 		4957B1712604912C000C4D9D /* libPotentiometer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPotentiometer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4957B17F2604914C000C4D9D /* main.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		4957B18326049155000C4D9D /* Potentiometer.mmp */ = {isa = PBXFileReference; lastKnownFileType = text; path = Potentiometer.mmp; sourceTree = "<group>"; };
+		4957B18F26049808000C4D9D /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		4957B19026049808000C4D9D /* Makefile */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.make; path = Makefile; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +47,8 @@
 		4934B2F7260486A9001F0445 = {
 			isa = PBXGroup;
 			children = (
+				4957B19026049808000C4D9D /* Makefile */,
+				4957B18F26049808000C4D9D /* README.md */,
 				4934B30426048781001F0445 /* Blink */,
 				4957B1722604912C000C4D9D /* Potentiometer */,
 				4934B30326048781001F0445 /* Products */,
