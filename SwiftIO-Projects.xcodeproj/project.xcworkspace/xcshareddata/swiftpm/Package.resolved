@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "SwiftIO",
+        "repositoryURL": "git@github.com:armcknight/SwiftIO.git",
+        "state": {
+          "branch": "master",
+          "revision": "c523f345c9e55cbf09a5c4363f380cfb7ad05426",
+          "version": null
+        }
+      }
+    ]
+  },
+  "version": 1
+}
