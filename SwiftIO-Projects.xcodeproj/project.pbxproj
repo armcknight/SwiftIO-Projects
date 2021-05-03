@@ -139,13 +139,25 @@
 		4957B19826049894000C4D9D /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				4957B1A3260498AA000C4D9D /* OnboardLED.swift */,
-				4957B1AD260498DC000C4D9D /* DigitalOut.swift */,
+				4987C188263F21EA0020FDB1 /* Components */,
+				4987C198263FBB160020FDB1 /* Extensions */,
+		4987C188263F21EA0020FDB1 /* Components */ = {
+			isa = PBXGroup;
+			children = (
 				4957B1C226049D28000C4D9D /* AnalogIn.swift */,
+				4957B1A3260498AA000C4D9D /* OnboardLED.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		4987C198263FBB160020FDB1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				4957B1AD260498DC000C4D9D /* DigitalOut.swift */,
 				497BDD582604A47F001FB679 /* Then.swift */,
 				497BDD5D2604A52F001FB679 /* CaseIterable.swift */,
 			);
-			path = Shared;
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
