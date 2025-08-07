@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		490EB32F26413102005CDFA2 /* SwiftIO in Frameworks */ = {isa = PBXBuildFile; productRef = 490EB32E26413102005CDFA2 /* SwiftIO */; };
+		490EB33026413102005CDFA2 /* libShared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4957B19726049894000C4D9D /* libShared.a */; };
+		490EB332264131A6005CDFA2 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490EB331264131A6005CDFA2 /* main.swift */; };
+		490EB34D26426AE5005CDFA2 /* FileDescriptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 490EB34C26426AE5005CDFA2 /* FileDescriptor.swift */; };
 		492DFFC326102FF600A629C6 /* SwiftIO in Frameworks */ = {isa = PBXBuildFile; productRef = 492DFFC226102FF600A629C6 /* SwiftIO */; };
 		492DFFC626102FF600A629C6 /* libShared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4957B19726049894000C4D9D /* libShared.a */; };
 		492DFFC82610316000A629C6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 492DFFC72610316000A629C6 /* main.swift */; };
@@ -28,9 +32,13 @@
 		4987C18F263F23C70020FDB1 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 4987C18E263F23C70020FDB1 /* Then */; };
 		4987C191263F23D90020FDB1 /* SwiftIO in Frameworks */ = {isa = PBXBuildFile; productRef = 4987C190263F23D90020FDB1 /* SwiftIO */; };
 		4987C192263F23D90020FDB1 /* libShared.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4957B19726049894000C4D9D /* libShared.a */; };
+		4987C1AE264120C00020FDB1 /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4987C1AD264120C00020FDB1 /* Float.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		490EB31F264130DD005CDFA2 /* libGreenhouseRecorder.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGreenhouseRecorder.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		490EB331264131A6005CDFA2 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		490EB34C26426AE5005CDFA2 /* FileDescriptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileDescriptor.swift; sourceTree = "<group>"; };
 		492DFFB526102FE000A629C6 /* libHelloWorldLCD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHelloWorldLCD.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		492DFFC72610316000A629C6 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		492DFFD3261031CB00A629C6 /* HelloWorldLCD.mmp */ = {isa = PBXFileReference; lastKnownFileType = text; path = HelloWorldLCD.mmp; sourceTree = "<group>"; };
@@ -50,12 +58,22 @@
 		497BDD582604A47F001FB679 /* Then.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Then.swift; sourceTree = "<group>"; };
 		497BDD5D2604A52F001FB679 /* CaseIterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaseIterable.swift; sourceTree = "<group>"; };
 		4987C156263F20630020FDB1 /* libHumiture.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHumiture.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4987C16A263F20840020FDB1 /* Humiture.mmp */ = {isa = PBXFileReference; lastKnownFileType = text; path = Humiture.mmp; sourceTree = "<group>"; };
+		4987C16A263F20840020FDB1 /* GreenhouseRecorder.mmp */ = {isa = PBXFileReference; lastKnownFileType = text; path = GreenhouseRecorder.mmp; sourceTree = "<group>"; };
 		4987C172263F20B60020FDB1 /* HumitureSHT3x.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HumitureSHT3x.swift; sourceTree = "<group>"; };
 		4987C174263F20B60020FDB1 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		4987C1AD264120C00020FDB1 /* Float.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		490EB31D264130DD005CDFA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490EB33026413102005CDFA2 /* libShared.a in Frameworks */,
+				490EB32F26413102005CDFA2 /* SwiftIO in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		492DFFB326102FE000A629C6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -104,6 +122,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		490EB320264130DD005CDFA2 /* GreenhouseRecorder */ = {
+			isa = PBXGroup;
+			children = (
+				4987C16A263F20840020FDB1 /* GreenhouseRecorder.mmp */,
+				490EB33F264131F0005CDFA2 /* Sources */,
+			);
+			path = GreenhouseRecorder;
+			sourceTree = "<group>";
+		};
+		490EB33F264131F0005CDFA2 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				490EB331264131A6005CDFA2 /* main.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
 		492DFFB626102FE100A629C6 /* HelloWorldLCD */ = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +166,7 @@
 				4957B19826049894000C4D9D /* Shared */,
 				492DFFB626102FE100A629C6 /* HelloWorldLCD */,
 				4987C157263F20630020FDB1 /* Humiture */,
+				490EB320264130DD005CDFA2 /* GreenhouseRecorder */,
 				4934B30326048781001F0445 /* Products */,
 				4957B18426049176000C4D9D /* Frameworks */,
 			);
@@ -144,6 +180,7 @@
 				4957B19726049894000C4D9D /* libShared.a */,
 				492DFFB526102FE000A629C6 /* libHelloWorldLCD.a */,
 				4987C156263F20630020FDB1 /* libHumiture.a */,
+				490EB31F264130DD005CDFA2 /* libGreenhouseRecorder.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -202,7 +239,6 @@
 			isa = PBXGroup;
 			children = (
 				4987C171263F20B60020FDB1 /* Sources */,
-				4987C16A263F20840020FDB1 /* Humiture.mmp */,
 			);
 			path = Humiture;
 			sourceTree = "<group>";
@@ -232,6 +268,8 @@
 				4957B1AD260498DC000C4D9D /* DigitalOut.swift */,
 				497BDD582604A47F001FB679 /* Then.swift */,
 				497BDD5D2604A52F001FB679 /* CaseIterable.swift */,
+				4987C1AD264120C00020FDB1 /* Float.swift */,
+				490EB34C26426AE5005CDFA2 /* FileDescriptor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -239,6 +277,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		490EB31B264130DD005CDFA2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		492DFFB126102FE000A629C6 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -277,6 +322,26 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		490EB31E264130DD005CDFA2 /* GreenhouseRecorder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 490EB325264130DD005CDFA2 /* Build configuration list for PBXNativeTarget "GreenhouseRecorder" */;
+			buildPhases = (
+				490EB31B264130DD005CDFA2 /* Headers */,
+				490EB31C264130DD005CDFA2 /* Sources */,
+				490EB31D264130DD005CDFA2 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GreenhouseRecorder;
+			packageProductDependencies = (
+				490EB32E26413102005CDFA2 /* SwiftIO */,
+			);
+			productName = GreenhouseRecorder;
+			productReference = 490EB31F264130DD005CDFA2 /* libGreenhouseRecorder.a */;
+			productType = "com.apple.product-type.library.static";
+		};
 		492DFFB426102FE000A629C6 /* HelloWorldLCD */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 492DFFBD26102FE100A629C6 /* Build configuration list for PBXNativeTarget "HelloWorldLCD" */;
@@ -386,6 +451,10 @@
 			attributes = {
 				LastUpgradeCheck = 1210;
 				TargetAttributes = {
+					490EB31E264130DD005CDFA2 = {
+						CreatedOnToolsVersion = 12.4;
+						LastSwiftMigration = 1240;
+					};
 					492DFFB426102FE000A629C6 = {
 						CreatedOnToolsVersion = 12.1;
 						LastSwiftMigration = 1210;
@@ -428,11 +497,20 @@
 				4957B19626049894000C4D9D /* Shared */,
 				492DFFB426102FE000A629C6 /* HelloWorldLCD */,
 				4987C155263F20630020FDB1 /* Humiture */,
+				490EB31E264130DD005CDFA2 /* GreenhouseRecorder */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
+		490EB31C264130DD005CDFA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				490EB332264131A6005CDFA2 /* main.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		492DFFB226102FE000A629C6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -468,6 +546,8 @@
 				497BDD592604A47F001FB679 /* Then.swift in Sources */,
 				4957B1AE260498DC000C4D9D /* DigitalOut.swift in Sources */,
 				4987C182263F21A40020FDB1 /* HumitureSHT3x.swift in Sources */,
+				4987C1AE264120C00020FDB1 /* Float.swift in Sources */,
+				490EB34D26426AE5005CDFA2 /* FileDescriptor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -482,6 +562,138 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		490EB326264130DD005CDFA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		490EB327264130DD005CDFA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 		492DFFBB26102FE100A629C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -1133,6 +1345,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		490EB325264130DD005CDFA2 /* Build configuration list for PBXNativeTarget "GreenhouseRecorder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				490EB326264130DD005CDFA2 /* Debug */,
+				490EB327264130DD005CDFA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		492DFFBD26102FE100A629C6 /* Build configuration list for PBXNativeTarget "HelloWorldLCD" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -1209,6 +1430,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		490EB32E26413102005CDFA2 /* SwiftIO */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4957B169260490F7000C4D9D /* XCRemoteSwiftPackageReference "SwiftIO" */;
+			productName = SwiftIO;
+		};
 		492DFFC226102FF600A629C6 /* SwiftIO */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 4957B169260490F7000C4D9D /* XCRemoteSwiftPackageReference "SwiftIO" */;

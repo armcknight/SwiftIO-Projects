@@ -12,7 +12,11 @@
  able to use them.
  */
 
+import SwiftIO
 import Then
 
 extension Int: Then {}
 extension Float: Then {}
+
+extension FileDescriptor: Then {}
+
